@@ -14,4 +14,9 @@ public class Task {
     public void setStatus(Status status) {
         this.status = status;
     }
+
+    public void setStatus(Status status, String taskType) {
+        this.status = status;
+        System.out.println("Cтатуc " + taskType + " обновлён!");
+    }
 }

@@ -6,6 +6,7 @@ public class Main {
         InMemoryTaskManager taskManager = Managers.getDefault();
         InMemoryHistoryManager historyManager = new InMemoryHistoryManager();
 
+        System.out.println("Трекер задач");
         while (true) {
             taskManager.epicStatusCheck();
             taskManager.showFunctions();
@@ -33,7 +34,7 @@ public class Main {
                     taskManager.deleteTask();
                     break;
                 case "8":
-                    historyManager.getHistory();
+                    historyManager.showHistory(historyManager.getHistory());
                     break;
                 case "9":
                     System.out.println("Завершение...");
