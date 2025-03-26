@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class InMemoryHistoryManager implements HistoryManager {
     static HashMap<Integer, Node<Task>> history = new HashMap<>();

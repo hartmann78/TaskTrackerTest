@@ -19,4 +19,9 @@ public class Task {
         this.status = status;
         System.out.println("Cтатуc " + taskType + " обновлён!");
     }
+
+    @Override
+    public String toString() {
+        return name + ',' + status + ',' + description + '\n';
+    }
 }

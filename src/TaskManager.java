@@ -11,6 +11,12 @@ public interface TaskManager {
 
     void create();
 
+    Task taskCreator(int taskId, boolean newCheck);
+
+    Epic epicCreator(int epicId, boolean newCheck);
+
+    Subtask subTaskCreator(int subTaskId, int count, boolean newCheck);
+
     void updateTask();
 
     void updateStatus();

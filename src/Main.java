@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        InMemoryTaskManager taskManager = Managers.getDefault();
+        InMemoryTaskManager taskManager = Managers.getSave();
+
         InMemoryHistoryManager historyManager = new InMemoryHistoryManager();
 
         System.out.println("Трекер задач");
